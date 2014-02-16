@@ -23,7 +23,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -76,8 +75,10 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		
 		// set icon padding
-		ImageView view = (ImageView)findViewById(android.R.id.home);
-		view.setPadding(0, 0, 10, 0);
+		// ImageView view = (ImageView)findViewById(android.R.id.home);
+		// view.setPadding(0, 0, 10, 0);
+		
+		getActionBar().hide();
 		
 		// Disable strict mode to run network on main thread
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -217,6 +218,11 @@ public class MainActivity extends Activity {
 					long userID = accessToken.getUserId();
 					User user = twitter.showUser(userID);
 					String username = user.getName();
+					
+					// Pat added this
+					// Automatically forwards to next activity
+					Intent startTweaking = new Intent(MainActivity.this, StartTweaking.class);
+		    	    startActivity(startTweaking);
 					
 					// Displaying in xml ui
 					lblUserName.setText(Html.fromHtml("<b>Welcome " + username + "</b>"));
