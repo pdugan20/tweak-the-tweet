@@ -1,4 +1,4 @@
-package com.androidhive.twitterconnect;
+package com.patdugan.tweakthetweet;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -28,7 +28,7 @@ public class AlertDialogManager {
 			alertDialog.setIcon((status) ? R.drawable.success : R.drawable.fail);
 
 		// Setting OK Button
-		alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
+		alertDialog.setButton(0, "OK", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 			}
 		});

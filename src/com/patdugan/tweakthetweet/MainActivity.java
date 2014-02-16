@@ -1,4 +1,4 @@
-package com.androidhive.twitterconnect;
+package com.patdugan.tweakthetweet;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
@@ -28,19 +28,14 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	// Constants
-	/**
-	 * Register your here app https://dev.twitter.com/apps/new and get your
-	 * consumer key and secret
-	 * */
-	static String TWITTER_CONSUMER_KEY = "q3v34CLiPR7WhO9MwIsDw"; // place your consumer key here
-	static String TWITTER_CONSUMER_SECRET = "NfcsfyYqJ7G2Osa8w5HHY1AcCDIwHIDT82V0W0pFM"; // place your consumer secret here
+	static String TWITTER_CONSUMER_KEY = "q3v34CLiPR7WhO9MwIsDw"; 
+	static String TWITTER_CONSUMER_SECRET = "NfcsfyYqJ7G2Osa8w5HHY1AcCDIwHIDT82V0W0pFM"; 
 
 	// Preference Constants
 	static String PREFERENCE_NAME = "twitter_oauth";
 	static final String PREF_KEY_OAUTH_TOKEN = "oauth_token";
 	static final String PREF_KEY_OAUTH_SECRET = "oauth_token_secret";
 	static final String PREF_KEY_TWITTER_LOGIN = "isTwitterLogedIn";
-
 	static final String TWITTER_CALLBACK_URL = "oauth://t4jsample";
 
 	// Twitter oauth urls
@@ -117,6 +112,12 @@ public class MainActivity extends Activity {
 		// Shared Preferences
 		mSharedPreferences = getApplicationContext().getSharedPreferences(
 				"MyPref", 0);
+		
+		// Checks to see if user is already logged in when starting main activity
+		if (isTwitterLoggedInAlready()) {
+			Intent startTweaking = new Intent(MainActivity.this, StartTweaking.class);
+    	    startActivity(startTweaking);
+		}
 
 		/**
 		 * Twitter login button click event will call loginToTwitter() function

@@ -1,4 +1,4 @@
-package com.androidhive.twitterconnect;
+package com.patdugan.tweakthetweet;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

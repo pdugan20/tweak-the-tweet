@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.androidhive.twitterconnect;
+package com.patdugan.tweakthetweet;
 
 public final class R {
     public static final class attr {
@@ -31,7 +31,8 @@ public final class R {
         public static final int txtUpdateStatus=0x7f080003;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int about=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
@@ -40,6 +41,8 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int menu_settings=0x7f050002;
+        public static final int start_label=0x7f050005;
+        public static final int start_text=0x7f050004;
         public static final int title_activity_main=0x7f050003;
     }
     public static final class style {
