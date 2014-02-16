@@ -21,7 +21,8 @@
         
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+            android:logo="@drawable/logo_in_app" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -36,7 +37,8 @@
         
         <activity
             android:name=".StartTweaking"
-            android:label="@string/start_label">
+            android:label="@string/start_label"
+            android:logo="@drawable/logo_in_app" >
         </activity>
         
     </application>
