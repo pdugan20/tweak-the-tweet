@@ -76,7 +76,7 @@ public class StartTweaking extends Activity {
 			@Override
 			// set button listener
 			public void onClick(View arg0) {
-				Intent circleMap = new Intent(StartTweaking.this, CircleDemoActivity.class);
+				Intent circleMap = new Intent(StartTweaking.this, SendTweet.class);
 	    	    startActivity(circleMap);
 			}
 		});	

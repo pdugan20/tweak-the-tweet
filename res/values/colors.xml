@@ -3,4 +3,5 @@
    <color name="white">#FFFFFF</color>
    <color name="twitter_blue">#55ACEE</color>
    <color name="twitter_gray">#8899A6</color>
+   <color name="twitter_dark_gray">#333</color>
 </resources>

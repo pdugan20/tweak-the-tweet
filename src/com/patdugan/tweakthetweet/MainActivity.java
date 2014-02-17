@@ -122,7 +122,9 @@ public class MainActivity extends Activity {
 		// Checks to see if user is already logged in when starting main activity
 		if (isTwitterLoggedInAlready()) {
 			Intent startTweaking = new Intent(MainActivity.this, StartTweaking.class);
+			startTweaking.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     	    startActivity(startTweaking);
+    	    finish();
 		}
 
 		/**
@@ -222,7 +224,9 @@ public class MainActivity extends Activity {
 					// Pat added this
 					// Automatically forwards to next activity
 					Intent startTweaking = new Intent(MainActivity.this, StartTweaking.class);
+					startTweaking.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		    	    startActivity(startTweaking);
+		    	    finish();
 					
 					// Displaying in xml ui
 					lblUserName.setText(Html.fromHtml("<b>Welcome " + username + "</b>"));

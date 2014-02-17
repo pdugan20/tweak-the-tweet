@@ -63,7 +63,18 @@
         
         <activity
       		android:name=".CircleDemoActivity"
-      		android:label="@string/circle_demo_label"/>
+      		android:label="@string/circle_demo_label">
+        </activity>
+        
+        <activity
+      		android:name=".SendTweet"
+      		android:label="@string/send_tweet_label">
+            
+            <!-- Parent activity meta-data to support API level 7+ -->
+        	<meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.patdugan.tweakthetweet.StartTweaking" />
+        </activity>
         
     </application>
 

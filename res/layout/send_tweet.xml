@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="3">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <EditText
+            android:id="@+id/txtUpdateStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_margin="10dip"
+            android:text=""
+            android:maxLength="140"
+            android:textColor="@color/twitter_dark_gray"
+   			android:gravity="top"  />
+
+        <TextView
+            android:id="@+id/tweetCharacterCount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="140"
+            android:gravity="right"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/twitter_gray"
+            android:textSize="15dip" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/twitter_gray"
+            android:textSize="15dip" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+        
+    <!-- Twitter Send Button -->
+    <Button android:id="@+id/btnUpdateStatus"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send tweet"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+   	    android:background="@color/twitter_blue" 
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableRight="@drawable/send_white"
+        android:paddingRight="10dp"/>
+    
+    </LinearLayout>
+
+</LinearLayout>
