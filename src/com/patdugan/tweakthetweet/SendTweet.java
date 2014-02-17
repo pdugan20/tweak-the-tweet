@@ -66,6 +66,9 @@ SharedPreferences mPrefs;
 // Handle to a SharedPreferences editor
 SharedPreferences.Editor mEditor;
 
+// Global address string
+public String currentAddress;
+
 /*
 * Note if updates have been turned on. Starts out as "false"; is set to "true" in the
 * method handleRequestSuccess of LocationUpdateReceiver.
@@ -239,28 +242,28 @@ boolean mUpdatesRequested = false;
 		needLabel.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				txtUpdate.append("#need ");
+				txtUpdate.append("#Need ");
 			}
 		});
 		
 		offerLabel.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				txtUpdate.append("#offer ");
+				txtUpdate.append("#Offer ");
 			}
 		});
 		
 		shelterLabel.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				txtUpdate.append("#shelter ");
+				txtUpdate.append("#Shelter ");
 			}
 		});
 		
 		damageLabel.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				txtUpdate.append("#damage ");
+				txtUpdate.append("#Damage ");
 			}
 		});
 		
@@ -355,6 +358,8 @@ boolean mUpdatesRequested = false;
 							.show();
 					// Clearing EditText field
 					txtUpdate.setText("");
+					String eventName = "#SeaQuake #Loc";
+					txtUpdate.append(eventName + " "+ currentAddress);
 				}
 			});
 		}
@@ -472,7 +477,7 @@ boolean mUpdatesRequested = false;
          * Connect the client. Don't re-start any requests here;
          * instead, wait for onResume()
          */
-        mLocationClient.connect();
+        // mLocationClient.connect();
 
     }
 
@@ -711,6 +716,7 @@ boolean mUpdatesRequested = false;
             // Set the address in the UI
             // mAddress.setText(address);
             txtUpdate.append(" " + address + " ");
+            currentAddress = address;
         }
     }
 }
