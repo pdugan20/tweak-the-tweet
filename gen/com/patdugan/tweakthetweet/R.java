@@ -217,16 +217,17 @@ containing a value of this type.
         public static final int common_signin_btn_text_pressed_light=0x7f020019;
         public static final int fail=0x7f02001a;
         public static final int ic_action_search=0x7f02001b;
-        public static final int ic_launcher=0x7f02001c;
-        public static final int ic_plusone_medium_off_client=0x7f02001d;
-        public static final int ic_plusone_small_off_client=0x7f02001e;
-        public static final int ic_plusone_standard_off_client=0x7f02001f;
-        public static final int ic_plusone_tall_off_client=0x7f020020;
-        public static final int logo_in_app=0x7f020021;
-        public static final int send_white=0x7f020022;
-        public static final int success=0x7f020023;
-        public static final int textlines=0x7f020024;
-        public static final int twitter_white_small=0x7f020025;
+        public static final int ic_action_send_now=0x7f02001c;
+        public static final int ic_launcher=0x7f02001d;
+        public static final int ic_plusone_medium_off_client=0x7f02001e;
+        public static final int ic_plusone_small_off_client=0x7f02001f;
+        public static final int ic_plusone_standard_off_client=0x7f020020;
+        public static final int ic_plusone_tall_off_client=0x7f020021;
+        public static final int logo_in_app=0x7f020022;
+        public static final int send_white=0x7f020023;
+        public static final int success=0x7f020024;
+        public static final int textlines=0x7f020025;
+        public static final int twitter_white_small=0x7f020026;
     }
     public static final class id {
         public static final int address=0x7f050012;
@@ -234,6 +235,7 @@ containing a value of this type.
         public static final int btnLoginTwitter=0x7f050008;
         public static final int btnLogoutTwitter=0x7f05000d;
         public static final int btnUpdateStatus=0x7f05000c;
+        public static final int damage_label=0x7f050017;
         public static final int hueSeekBar=0x7f05000e;
         public static final int hybrid=0x7f050004;
         public static final int imageView1=0x7f050007;
@@ -241,13 +243,19 @@ containing a value of this type.
         public static final int lblUserName=0x7f050009;
         public static final int map=0x7f050005;
         public static final int mapButton=0x7f050006;
-        public static final int menu_logout=0x7f050013;
+        public static final int menu_logout=0x7f050019;
+        public static final int need_label=0x7f050015;
         public static final int none=0x7f050000;
         public static final int normal=0x7f050001;
+        public static final int offer_label=0x7f050016;
         public static final int satellite=0x7f050002;
+        public static final int shelter_label=0x7f050018;
         public static final int terrain=0x7f050003;
         public static final int tweetCharacterCount=0x7f050011;
+        public static final int tweet_send=0x7f05001a;
         public static final int txtUpdateStatus=0x7f05000b;
+        public static final int username_label=0x7f050013;
+        public static final int vw1=0x7f050014;
         public static final int widthSeekBar=0x7f050010;
     }
     public static final class integer {
@@ -262,9 +270,11 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int activity_main=0x7f0a0000;
+        public static final int activity_send=0x7f0a0001;
     }
     public static final class string {
-        public static final int address_output_string=0x7f060027;
+        public static final int action_send=0x7f060022;
+        public static final int address_output_string=0x7f060028;
         public static final int app_name=0x7f06001a;
         /**   Title for notification shown when GooglePlayServices needs to be
         enabled for a application to work. [CHAR LIMIT=70] 
@@ -289,7 +299,7 @@ containing a value of this type.
         [CHAR LIMIT=70] 
          */
         public static final int auth_client_using_bad_version_title=0x7f060014;
-        public static final int circle_demo_label=0x7f060026;
+        public static final int circle_demo_label=0x7f060027;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
@@ -361,20 +371,20 @@ containing a value of this type.
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
         public static final int common_signin_button_text_long=0x7f060013;
-        public static final int fill_alpha=0x7f060023;
-        public static final int fill_hue=0x7f060024;
+        public static final int fill_alpha=0x7f060024;
+        public static final int fill_hue=0x7f060025;
         public static final int hello_world=0x7f06001b;
-        public static final int latitude_longitude=0x7f060028;
-        public static final int menu_logout=0x7f060029;
+        public static final int latitude_longitude=0x7f060029;
+        public static final int menu_logout=0x7f06002a;
         public static final int menu_settings=0x7f06001c;
-        public static final int properties_circle=0x7f060025;
+        public static final int properties_circle=0x7f060026;
         public static final int send_tweet_label=0x7f060021;
         public static final int start_label=0x7f060020;
         public static final int start_text=0x7f06001e;
         public static final int start_text_header=0x7f06001f;
         /**  for maps demo 
          */
-        public static final int stroke_width=0x7f060022;
+        public static final int stroke_width=0x7f060023;
         public static final int title_activity_main=0x7f06001d;
     }
     public static final class style {

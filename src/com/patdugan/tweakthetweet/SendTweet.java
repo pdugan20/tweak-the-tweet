@@ -100,6 +100,12 @@ boolean mUpdatesRequested = false;
 	TextView lblUpdate;
 	TextView lblUserName;
 	TextView tweetCharacterCount;
+	
+	// Hashtag labels
+	TextView needLabel;
+	TextView offerLabel;
+	TextView damageLabel;
+	TextView shelterLabel;
 
 	// Progress dialog
 	ProgressDialog pDialog;
@@ -190,6 +196,11 @@ boolean mUpdatesRequested = false;
 		lblUserName = (TextView) findViewById(R.id.lblUserName);
 		tweetCharacterCount = (TextView) findViewById(R.id.tweetCharacterCount);
 		
+		needLabel = (TextView) findViewById(R.id.need_label);
+		offerLabel = (TextView) findViewById(R.id.offer_label);
+		damageLabel = (TextView) findViewById(R.id.damage_label);
+		shelterLabel = (TextView) findViewById(R.id.shelter_label);
+		
 		// getAddress();
 		mLocationClient.connect();
 		// look for onconnected() for rest of code here
@@ -224,6 +235,34 @@ boolean mUpdatesRequested = false;
 				Log.e("Twitter Login Error", "> " + e.getMessage());
 			}
 		}
+		
+		needLabel.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				txtUpdate.append("#need ");
+			}
+		});
+		
+		offerLabel.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				txtUpdate.append("#offer ");
+			}
+		});
+		
+		shelterLabel.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				txtUpdate.append("#shelter ");
+			}
+		});
+		
+		damageLabel.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				txtUpdate.append("#damage ");
+			}
+		});
 		
 		/**
 		 * Button click event to Update Status, will call updateTwitterStatus()
@@ -349,7 +388,7 @@ boolean mUpdatesRequested = false;
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    // Inflate the menu items for use in the action bar
 	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.menu.activity_main, menu);
+	    inflater.inflate(R.menu.activity_send, menu);
 	    return super.onCreateOptionsMenu(menu);
 	}
 	
@@ -366,6 +405,22 @@ boolean mUpdatesRequested = false;
 	    		Intent goHome = new Intent(SendTweet.this, MainActivity.class);
 	    	    startActivity(goHome);
 	            return true;
+	        case R.id.tweet_send:
+	        	// Call update status function
+				// Get the status from EditText
+				String status = txtUpdate.getText().toString();
+
+				// Check for blank text
+				if (status.trim().length() > 0) {
+					// update status
+					new updateTwitterStatus().execute(status);
+				} else {
+					// EditText is empty
+					Toast.makeText(getApplicationContext(),
+							"Please enter status message", Toast.LENGTH_SHORT)
+							.show();
+				}
+				mLocationClient.disconnect();
 	        case android.R.id.home:
 	            NavUtils.navigateUpFromSameTask(this);
 	            return true;
@@ -655,7 +710,7 @@ boolean mUpdatesRequested = false;
 
             // Set the address in the UI
             // mAddress.setText(address);
-            txtUpdate.append(" " + address);
+            txtUpdate.append(" " + address + " ");
         }
     }
 }

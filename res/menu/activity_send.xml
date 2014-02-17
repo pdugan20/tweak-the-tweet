@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tweet_send"
+          android:icon="@drawable/ic_action_send_now"
+          android:title="@string/action_send"
+          android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/menu_logout"
+        android:title="@string/menu_logout"
+        android:orderInCategory="100" />
+</menu>

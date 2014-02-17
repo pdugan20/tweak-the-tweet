@@ -11,6 +11,7 @@
     <string name="start_text_header">Earthquake in Seattle</string>
     <string name="start_label">Nearby Events</string>
     <string name="send_tweet_label">Compose Tweet</string>
+    <string name="action_send">Send</string>
     
     <!-- for maps demo -->
 	<string name="stroke_width">Stroke Width</string>

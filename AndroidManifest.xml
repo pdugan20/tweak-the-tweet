@@ -62,11 +62,6 @@
         </activity>
         
         <activity
-      		android:name=".CircleDemoActivity"
-      		android:label="@string/circle_demo_label">
-        </activity>
-        
-        <activity
       		android:name=".SendTweet"
       		android:label="@string/send_tweet_label">
             
