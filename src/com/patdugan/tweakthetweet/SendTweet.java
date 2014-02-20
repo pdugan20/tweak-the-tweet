@@ -44,6 +44,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -243,6 +244,8 @@ boolean mUpdatesRequested = false;
 			@Override
 			public void onClick(View v) {
 				txtUpdate.append("#Need ");
+				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+				imm.showSoftInput(txtUpdate, InputMethodManager.SHOW_IMPLICIT);
 			}
 		});
 		
@@ -250,6 +253,8 @@ boolean mUpdatesRequested = false;
 			@Override
 			public void onClick(View v) {
 				txtUpdate.append("#Offer ");
+				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+				imm.showSoftInput(txtUpdate, InputMethodManager.SHOW_IMPLICIT);
 			}
 		});
 		
@@ -257,6 +262,8 @@ boolean mUpdatesRequested = false;
 			@Override
 			public void onClick(View v) {
 				txtUpdate.append("#Shelter ");
+				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+				imm.showSoftInput(txtUpdate, InputMethodManager.SHOW_IMPLICIT);
 			}
 		});
 		
@@ -264,6 +271,8 @@ boolean mUpdatesRequested = false;
 			@Override
 			public void onClick(View v) {
 				txtUpdate.append("#Damage ");
+				InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+				imm.showSoftInput(txtUpdate, InputMethodManager.SHOW_IMPLICIT);
 			}
 		});
 		
