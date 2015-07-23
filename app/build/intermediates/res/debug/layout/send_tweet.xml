@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="3">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <EditText
+            android:id="@+id/txtUpdateStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_margin="10dip"
+            android:gravity="top"
+            android:maxLength="140"
+            android:text=""
+            android:textColor="@color/twitter_dark_gray" />
+
+        <TextView
+            android:id="@+id/tweetCharacterCount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:text="140"
+            android:textColor="@color/twitter_gray"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:gravity="right"
+            android:textColor="@color/twitter_gray"
+            android:textSize="15dip" />
+
+<TextView
+    android:id="@+id/username_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginLeft="13dip"
+    android:layout_marginRight="13dip"
+    android:text="ADD ADDITIONAL LABELS"
+    android:textColor="#999999"
+    android:textSize="14dp"
+    android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:background="#999999" />
+
+        <RelativeLayout android:id="@+id/vw1" android:layout_width="fill_parent"
+android:layout_height="wrap_content" android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/need_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dip"
+            android:text="#Need"
+            android:textColor="@color/twitter_blue"
+            android:textSize="22dip"/>
+        <TextView
+            android:id="@+id/offer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/need_label"
+            android:text="#Offer"
+            android:textColor="@color/twitter_blue"
+            android:textSize="22dip"/>
+        <TextView
+            android:id="@+id/damage_label"
+            android:layout_toRightOf="@id/offer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="#Damage"
+            android:textColor="@color/twitter_blue"
+            android:textSize="22dip"/>
+        
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/shelter_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="13dip"
+            android:layout_marginTop="4dip"
+            android:text="#Shelter"
+            android:textColor="@color/twitter_blue"
+            android:textSize="22dip" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+        
+    <!-- Twitter Send Button -->
+    <Button android:id="@+id/btnUpdateStatus"
+        android:textColor="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send tweet"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+   	    android:background="@color/twitter_blue" 
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableRight="@drawable/send_white"
+        android:paddingRight="10dp"/>
+    
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/patdugan/GitHub/tweak-the-tweet/app/src/main/res/layout/send_tweet.xml -->

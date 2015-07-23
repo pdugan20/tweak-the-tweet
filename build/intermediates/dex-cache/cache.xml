@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/libs/twitter4j-core-3.0.5.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="5999e1915b61b30c9fc40d5d1971906bb68aca6c">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/twitter4j-core-3.0.5-aa14c8a3ea0d0bfeffbae33eb7568bc09593dd1b.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/classes-9b92ed2657deb7fd2e6cea6f8cffd0b265cc81c0.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/exploded-aar/com.android.support/support-v13/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="6fc4c7067459e8d69e1bbcb3a8973cdd84d5d87b">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-805305c7603ca67e65b6dc6baf3926a095762926.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-90054fa6d5cdae6e98e0098526c8cbd486797221.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.1.71/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/classes-5a9b46a7a5bc62ef39a80ff7a668b9d164a8cc0c.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/classes-1b4f51b7d358f53626c78e36d44a26814528fad2.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/exploded-aar/com.android.support/support-v13/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="c4caf832116bca1f2e140bf1fb600e2edd190837">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/classes-98ee864adbe8c8b14922b812d81f97b0d49e6416.jar" />
+    </item>
+    <item
+        jar="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/patdugan/GitHub/tweak-the-tweet/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-933b8a99ec6d57e82e5886822bc6be2508500d7e.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" 
+    android:weightSum="5">
+    
+    	<fragment
+    	    xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:id="@+id/map"
+    	    android:name="com.google.android.gms.maps.MapFragment"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dip"
+    	    android:layout_weight="2" />
+    	
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="fill_parent"
+    		android:layout_height="0dip"
+    		android:background="#F0F0F0"
+    		android:orientation="vertical" 
+    		android:layout_weight="2">
+    		
+    	    <TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="10dip"
+    	    	android:layout_marginRight="10dip"
+    	    	android:layout_marginTop="10dip"
+            	android:gravity="bottom"
+            	android:text="@string/start_text_header"
+            	android:textSize="20dip"/>
+    	    
+        	<TextView
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="10dip"
+    	    	android:layout_marginRight="10dip"
+            	android:gravity="bottom"
+            	android:text="@string/start_text"
+            	android:textAppearance="?android:attr/textAppearanceSmall"
+            	android:layout_marginBottom="15dp"/>
+        	
+        	
+    	</LinearLayout>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dip"
+    	    android:layout_gravity="center_vertical"
+    	    android:layout_weight="1"
+    	    android:gravity="center|bottom"
+    	    android:orientation="vertical" >
+
+    		<Button
+    		    android:id="@+id/mapButton"
+    		    style="?android:attr/borderlessButtonStyle"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content"
+    		    android:layout_gravity="center_vertical"
+    		    android:layout_marginLeft="10dip"
+    		    android:layout_marginRight="10dip"
+    		    android:layout_marginBottom="10dip"
+    		    android:background="@color/twitter_blue"
+    		    android:drawableRight="@drawable/arrow_white"
+    		    android:text="Start tweeting"
+    		    android:textColor="@color/white" />
+    		
+    		</LinearLayout>
+</LinearLayout><!-- From: file:/Users/patdugan/GitHub/tweak-the-tweet/app/src/main/res/layout/about.xml -->
